@@ -10,8 +10,8 @@ module Htmltoword
     end
 
     def xslt(stylesheet_name = nil, stylesheet_path = nil)
-      return Nokogiri::XSLT(File.open(stylesheet_path)) if stylesheet_path
-      Nokogiri::XSLT(File.open(xslt_path(stylesheet_name)))
+      # return Nokogiri::XSLT(File.open(stylesheet_path)) if stylesheet_path
+      # Nokogiri::XSLT(File.open(xslt_path(stylesheet_name)))
     end
   end
 end
